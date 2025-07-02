@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+</head>
+<body bgcolor="pink">
+  <h2>Registration Form</h2>
+  <form action="#" method="post">
+    <label for="fname"><font color=blue> First name:</font></label><br>
+    <input type="text" id="fname" name="fname"  placeholder="Enter your name" required><br><br>
+    <label for="lname"><font color=blue>Last name:</font></label><br>
+    <input type="text" id="lname" name="lname"   pattern="[A-Za-z]+" title="invalid"   placeholder="Enter your last name" required><br><br>
+    <label for="email"><font color=blue>Email:</font></label><br>
+    <input type="email" id="email" name="email"  placeholder="Enter your email" required><br><br>
+    <label for="password"><font color=blue>Password:</font></label><br>
+    <input type="password" id="password" name="password" pattern="(?=.*\d{6})" title="invalid" placeholder="Enter your password" required><br><br>
+    <lable for="number"><font color=blue>Number:</font></lable><br>
+    <input type="tel" id="number" name="number" pattern="\d{10}" title="invalid"  placeholder="Enter your number" required><br><br>
+    <label for="dob"><font color=blue>DOB:</font></label><br><br>
+   <input type="date" required><br><br>
+   <label for="country"><font color=blue>country:</font></lable><br><br>
+    <select name="country" id="country">
+    <option value="INDIA">INDIA</option>
+    <option value="USA">USA</option>
+   <option value="JAPAN">JAPAN</option>
+    <option value="ENGLAND">ENGLAND</option>
+    </select><br><br>
+    <label for="i agree">I agree</label>
+    <input type="checkbox"><br><br>
+    <input type="submit" value="Register">
+  </form>
+</body>
+</html>
